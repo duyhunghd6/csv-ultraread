@@ -32,7 +32,7 @@ void test_1_singlethread(const std::string& inputPath, const std::string& output
             std::chrono::duration<double> elapsed = end - start;
             double seconds = elapsed.count();
             double rate = lineCount / seconds;
-            std::cout << lineCount << " lines processed. Rate: " << rate << " lines per second." << std::endl;
+            std::cout << lineCount << " lines processed. Rate: " << std::fixed << std::setprecision(1) << rate / 1e6 << "m lines per second (LPS)." << std::endl;
         }
     }
 
