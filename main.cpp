@@ -18,7 +18,6 @@ void test_1_singlethread(const std::string& inputPath, const std::string& output
         return;
     }
     
-
     std::string line;
     size_t lineCount = 0;
     auto start = std::chrono::steady_clock::now();
@@ -44,7 +43,6 @@ void test_1_singlethread(const std::string& inputPath, const std::string& output
     std::cout << "Total lines processed: " << lineCount << std::endl;
     std::cout << "File has been successfully copied." << std::endl;
 }
-
 
 void processBuffer(const std::vector<char>& buffer, std::ofstream& outputFile, size_t& lineCount) {
     size_t start = 0;
