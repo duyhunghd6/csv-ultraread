@@ -35,7 +35,7 @@ void test_1_singlethread(const std::string& inputPath, const std::string& output
             std::cout << lineCount << " lines processed. Rate: " << std::fixed << std::setprecision(1) << rate / 1e6 << "m lines per second (LPS)." << std::endl;
         }
     }
-
+    
     // Close both files
     inputFile.close();
     outputFile.close();
