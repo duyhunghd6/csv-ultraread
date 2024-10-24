@@ -17,6 +17,7 @@ void test_1_singlethread(const std::string& inputPath, const std::string& output
         std::cerr << "Error opening output file." << std::endl;
         return;
     }
+    
 
     std::string line;
     size_t lineCount = 0;
